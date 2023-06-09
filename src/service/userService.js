@@ -9,8 +9,8 @@ class UserService {
     return await User.find({});
   }
 
-  async addUser() {
-    return await User.create();
+  async addUser(user) {
+    return await User.create(user);
   }
 
   async deleteUserById(id) {
